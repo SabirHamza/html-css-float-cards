@@ -11,10 +11,17 @@
     margin: auto;
 }
 
-.container::after{
-    content: '';
-    display: block;
-    clear: both;
+header{
+    text-align: center;
+}
+
+.title{
+    padding: 1rem;
+    color: palevioletred;
+}
+
+.lorem{
+    padding: 1rem;
 }
 
 img{
@@ -22,11 +29,13 @@ img{
     float: left;
 }
 
-span{
+.row::after{
+    content: '';
     display: block;
+    clear: both;
 }
 
-.row::after{
+.card::after{
     content: '';
     display: block;
     clear: both;
@@ -36,26 +45,17 @@ span{
     margin: 0 -1rem;
 }
 
-.column::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
 .column{
     width: calc(100% / 3);
     padding: 1rem;
     float: left;
 }
 
-.card::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
 .card{
-    height: 100px;
     color: white;
     background-color: black;
+}
+
+span, a{
+    display: block;
 }
