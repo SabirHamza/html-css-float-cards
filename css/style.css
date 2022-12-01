@@ -11,6 +11,12 @@
     margin: auto;
 }
 
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 img{
     width: 100px;
     float: left;
@@ -20,6 +26,28 @@ span{
     display: block;
 }
 
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row{
+    margin: 0 -1rem;
+}
+
+.column::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.column{
+    width: calc(100% / 3);
+    padding: 1rem;
+    float: left;
+}
+
 .card::after{
     content: '';
     display: block;
@@ -27,8 +55,7 @@ span{
 }
 
 .card{
+    height: 100px;
     color: white;
     background-color: black;
-    width: calc(100% / 3);
-    float: left;
 }
